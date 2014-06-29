@@ -1,0 +1,692 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		963D034618EE3A4D002669B0 /* ZXYTwiigAnimeDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 963D034518EE3A4D002669B0 /* ZXYTwiigAnimeDetails.m */; };
+		963D034918EE4F52002669B0 /* ZXYTwiigAnimesActions.m in Sources */ = {isa = PBXBuildFile; fileRef = 963D034818EE4F52002669B0 /* ZXYTwiigAnimesActions.m */; };
+		9672958D18DF74D400A8269F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9672958C18DF74D400A8269F /* Foundation.framework */; };
+		9672958F18DF74D400A8269F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9672958E18DF74D400A8269F /* CoreGraphics.framework */; };
+		9672959118DF74D400A8269F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9672959018DF74D400A8269F /* UIKit.framework */; };
+		9672959718DF74D400A8269F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9672959518DF74D400A8269F /* InfoPlist.strings */; };
+		9672959918DF74D400A8269F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9672959818DF74D400A8269F /* main.m */; };
+		9672959D18DF74D400A8269F /* ZXYTwiigAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9672959C18DF74D400A8269F /* ZXYTwiigAppDelegate.m */; };
+		967295A018DF74D400A8269F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9672959E18DF74D400A8269F /* Main.storyboard */; };
+		967295A318DF74D400A8269F /* ZXYTwiigLogin.m in Sources */ = {isa = PBXBuildFile; fileRef = 967295A218DF74D400A8269F /* ZXYTwiigLogin.m */; };
+		967295A518DF74D400A8269F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 967295A418DF74D400A8269F /* Images.xcassets */; };
+		967295AC18DF74D500A8269F /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 967295AB18DF74D500A8269F /* XCTest.framework */; };
+		967295AD18DF74D500A8269F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9672958C18DF74D400A8269F /* Foundation.framework */; };
+		967295AE18DF74D500A8269F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9672959018DF74D400A8269F /* UIKit.framework */; };
+		967295B618DF74D500A8269F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 967295B418DF74D500A8269F /* InfoPlist.strings */; };
+		967295B818DF74D500A8269F /* TwiigTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 967295B718DF74D500A8269F /* TwiigTests.m */; };
+		9686ACB918EF966300D7F162 /* ZXYTwiigDBTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 9686ACB818EF966300D7F162 /* ZXYTwiigDBTest.m */; };
+		968928CB18F49F050072B65E /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 968928CA18F49F050072B65E /* CoreData.framework */; };
+		968928CE18F4A17C0072B65E /* TwiigBDD.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 968928CC18F4A17C0072B65E /* TwiigBDD.xcdatamodeld */; };
+		968A2F60195D45AD00A1A88C /* libMobileVLCKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9676C0D81959A11800E2D734 /* libMobileVLCKit.a */; };
+		968A2F61195D471500A1A88C /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9694252C1957265F00C64044 /* CoreAudio.framework */; };
+		968A2F62195D477600A1A88C /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 969425281957264500C64044 /* AudioToolbox.framework */; };
+		968A2F64195D48F300A1A88C /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 968A2F63195D48F300A1A88C /* libc++.dylib */; };
+		968A2F6F195D4D3200A1A88C /* File.mm in Sources */ = {isa = PBXBuildFile; fileRef = 968A2F6D195D4D3200A1A88C /* File.mm */; };
+		968A2F71195D4DD200A1A88C /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 968A2F70195D4DD200A1A88C /* libiconv.dylib */; };
+		968B1BDB1948291D008A6A8D /* ZXYTwiigAnime.m in Sources */ = {isa = PBXBuildFile; fileRef = 968B1BDA1948291D008A6A8D /* ZXYTwiigAnime.m */; };
+		968D9E0019008CB50006F2F6 /* ZXYTwiigVideo.m in Sources */ = {isa = PBXBuildFile; fileRef = 968D9DFF19008CB50006F2F6 /* ZXYTwiigVideo.m */; };
+		96B12C1A18E79D5000E481AD /* ZXYTwiigAnimeGenre.m in Sources */ = {isa = PBXBuildFile; fileRef = 96B12C1918E79D5000E481AD /* ZXYTwiigAnimeGenre.m */; };
+		96D7250918ECD96E006FB7C2 /* ZXYTwiigAnimeResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 96D7250818ECD96E006FB7C2 /* ZXYTwiigAnimeResult.m */; };
+		96D7250F18ECE08B006FB7C2 /* ZXYTwiigSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = 96D7250E18ECE08B006FB7C2 /* ZXYTwiigSearch.m */; };
+		96EC162B18E63E38009A7A45 /* ZXYTwiigMain.m in Sources */ = {isa = PBXBuildFile; fileRef = 96EC162A18E63E38009A7A45 /* ZXYTwiigMain.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		967295AF18DF74D500A8269F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9672958118DF74D400A8269F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9672958818DF74D400A8269F;
+			remoteInfo = Twiig;
+		};
+		968A2F7C195D5D0B00A1A88C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 968A2F78195D5D0A00A1A88C /* SimplePlayback.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7D11B366183BA71600FF0D25;
+			remoteInfo = SimplePlayback;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9633609419572235002DFE88 /* libMobileVLCKit.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libMobileVLCKit.a; path = ../../libMobileVLCKit.a; sourceTree = "<group>"; };
+		963D034418EE3A4D002669B0 /* ZXYTwiigAnimeDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXYTwiigAnimeDetails.h; sourceTree = "<group>"; };
+		963D034518EE3A4D002669B0 /* ZXYTwiigAnimeDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXYTwiigAnimeDetails.m; sourceTree = "<group>"; };
+		963D034718EE4F52002669B0 /* ZXYTwiigAnimesActions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXYTwiigAnimesActions.h; sourceTree = "<group>"; };
+		963D034818EE4F52002669B0 /* ZXYTwiigAnimesActions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXYTwiigAnimesActions.m; sourceTree = "<group>"; };
+		9672958918DF74D400A8269F /* Twiig.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Twiig.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9672958C18DF74D400A8269F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		9672958E18DF74D400A8269F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		9672959018DF74D400A8269F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		9672959418DF74D400A8269F /* Twiig-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Twiig-Info.plist"; sourceTree = "<group>"; };
+		9672959618DF74D400A8269F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9672959818DF74D400A8269F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9672959A18DF74D400A8269F /* Twiig-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Twiig-Prefix.pch"; sourceTree = "<group>"; };
+		9672959B18DF74D400A8269F /* ZXYTwiigAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZXYTwiigAppDelegate.h; sourceTree = "<group>"; };
+		9672959C18DF74D400A8269F /* ZXYTwiigAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZXYTwiigAppDelegate.m; sourceTree = "<group>"; };
+		9672959F18DF74D400A8269F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		967295A118DF74D400A8269F /* ZXYTwiigLogin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZXYTwiigLogin.h; sourceTree = "<group>"; };
+		967295A218DF74D400A8269F /* ZXYTwiigLogin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZXYTwiigLogin.m; sourceTree = "<group>"; };
+		967295A418DF74D400A8269F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		967295AA18DF74D500A8269F /* TwiigTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TwiigTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		967295AB18DF74D500A8269F /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		967295B318DF74D500A8269F /* TwiigTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TwiigTests-Info.plist"; sourceTree = "<group>"; };
+		967295B518DF74D500A8269F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		967295B718DF74D500A8269F /* TwiigTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TwiigTests.m; sourceTree = "<group>"; };
+		9676C0CE19596CD400E2D734 /* libMobileVLCKit.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libMobileVLCKit.a; path = "../../../Downloads/folder/VLCKit/build/Release-iphonesimulator/libMobileVLCKit.a"; sourceTree = "<group>"; };
+		9676C0D619599F3700E2D734 /* libMobileVLCKit.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libMobileVLCKit.a; path = "../../../Downloads/kit/VLCKit/build/Release-iphonesimulator/libMobileVLCKit.a"; sourceTree = "<group>"; };
+		9676C0D81959A11800E2D734 /* libMobileVLCKit.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libMobileVLCKit.a; path = ../../../Downloads/kit/VLCKit/build/libMobileVLCKit.a; sourceTree = "<group>"; };
+		9686ACB718EF966300D7F162 /* ZXYTwiigDBTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXYTwiigDBTest.h; sourceTree = "<group>"; };
+		9686ACB818EF966300D7F162 /* ZXYTwiigDBTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXYTwiigDBTest.m; sourceTree = "<group>"; };
+		968928CA18F49F050072B65E /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		968928CD18F4A17C0072B65E /* TwiigBDD.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TwiigBDD.xcdatamodel; sourceTree = "<group>"; };
+		968A2F63195D48F300A1A88C /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		968A2F6B195D4BF700A1A88C /* libc++.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.1.dylib"; path = "usr/lib/libc++.1.dylib"; sourceTree = SDKROOT; };
+		968A2F6D195D4D3200A1A88C /* File.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = File.mm; sourceTree = "<group>"; };
+		968A2F6E195D4D3200A1A88C /* File.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = File.h; sourceTree = "<group>"; };
+		968A2F70195D4DD200A1A88C /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = usr/lib/libiconv.dylib; sourceTree = SDKROOT; };
+		968A2F78195D5D0A00A1A88C /* SimplePlayback.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SimplePlayback.xcodeproj; path = ../../../Downloads/kit/VLCKit/Examples_iOS/SimplePlayback/SimplePlayback.xcodeproj; sourceTree = "<group>"; };
+		968B1BD91948291D008A6A8D /* ZXYTwiigAnime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXYTwiigAnime.h; sourceTree = "<group>"; };
+		968B1BDA1948291D008A6A8D /* ZXYTwiigAnime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXYTwiigAnime.m; sourceTree = "<group>"; };
+		968D9DFE19008CB50006F2F6 /* ZXYTwiigVideo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXYTwiigVideo.h; sourceTree = "<group>"; };
+		968D9DFF19008CB50006F2F6 /* ZXYTwiigVideo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXYTwiigVideo.m; sourceTree = "<group>"; };
+		968F7C3D194C3FEC00FF8D2B /* librtmp.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = librtmp.a; path = "../../rtmpdump-2.3/librtmp/librtmp.a"; sourceTree = "<group>"; };
+		968F7C3F194C43C600FF8D2B /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		96942526195725BA00C64044 /* libMobileVLCKit.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libMobileVLCKit.a; path = "../../../Downloads/VLCKit/build/Release-iphonesimulator/libMobileVLCKit.a"; sourceTree = "<group>"; };
+		969425281957264500C64044 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		9694252A1957264B00C64044 /* AudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioUnit.framework; path = System/Library/Frameworks/AudioUnit.framework; sourceTree = SDKROOT; };
+		9694252C1957265F00C64044 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		96942530195729FA00C64044 /* libMobileVLCKit.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libMobileVLCKit.a; path = ../../../Downloads/VLCKit/build/libMobileVLCKit.a; sourceTree = "<group>"; };
+		96B12C1818E79D5000E481AD /* ZXYTwiigAnimeGenre.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXYTwiigAnimeGenre.h; sourceTree = "<group>"; };
+		96B12C1918E79D5000E481AD /* ZXYTwiigAnimeGenre.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXYTwiigAnimeGenre.m; sourceTree = "<group>"; };
+		96D7250718ECD96E006FB7C2 /* ZXYTwiigAnimeResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXYTwiigAnimeResult.h; sourceTree = "<group>"; };
+		96D7250818ECD96E006FB7C2 /* ZXYTwiigAnimeResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXYTwiigAnimeResult.m; sourceTree = "<group>"; };
+		96D7250D18ECE08B006FB7C2 /* ZXYTwiigSearch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXYTwiigSearch.h; sourceTree = "<group>"; };
+		96D7250E18ECE08B006FB7C2 /* ZXYTwiigSearch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXYTwiigSearch.m; sourceTree = "<group>"; };
+		96EC162918E63E38009A7A45 /* ZXYTwiigMain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXYTwiigMain.h; sourceTree = "<group>"; };
+		96EC162A18E63E38009A7A45 /* ZXYTwiigMain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXYTwiigMain.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9672958618DF74D400A8269F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				968A2F60195D45AD00A1A88C /* libMobileVLCKit.a in Frameworks */,
+				968A2F71195D4DD200A1A88C /* libiconv.dylib in Frameworks */,
+				968A2F64195D48F300A1A88C /* libc++.dylib in Frameworks */,
+				968A2F62195D477600A1A88C /* AudioToolbox.framework in Frameworks */,
+				968A2F61195D471500A1A88C /* CoreAudio.framework in Frameworks */,
+				9672958F18DF74D400A8269F /* CoreGraphics.framework in Frameworks */,
+				968928CB18F49F050072B65E /* CoreData.framework in Frameworks */,
+				9672959118DF74D400A8269F /* UIKit.framework in Frameworks */,
+				9672958D18DF74D400A8269F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		967295A718DF74D500A8269F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				967295AC18DF74D500A8269F /* XCTest.framework in Frameworks */,
+				967295AE18DF74D500A8269F /* UIKit.framework in Frameworks */,
+				967295AD18DF74D500A8269F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9672958018DF74D400A8269F = {
+			isa = PBXGroup;
+			children = (
+				968A2F78195D5D0A00A1A88C /* SimplePlayback.xcodeproj */,
+				9672959218DF74D400A8269F /* Twiig */,
+				967295B118DF74D500A8269F /* TwiigTests */,
+				9672958B18DF74D400A8269F /* Frameworks */,
+				9672958A18DF74D400A8269F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9672958A18DF74D400A8269F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9672958918DF74D400A8269F /* Twiig.app */,
+				967295AA18DF74D500A8269F /* TwiigTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9672958B18DF74D400A8269F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				968A2F70195D4DD200A1A88C /* libiconv.dylib */,
+				968A2F6B195D4BF700A1A88C /* libc++.1.dylib */,
+				968A2F63195D48F300A1A88C /* libc++.dylib */,
+				9676C0D81959A11800E2D734 /* libMobileVLCKit.a */,
+				9676C0D619599F3700E2D734 /* libMobileVLCKit.a */,
+				9676C0CE19596CD400E2D734 /* libMobileVLCKit.a */,
+				96942530195729FA00C64044 /* libMobileVLCKit.a */,
+				9694252C1957265F00C64044 /* CoreAudio.framework */,
+				9694252A1957264B00C64044 /* AudioUnit.framework */,
+				969425281957264500C64044 /* AudioToolbox.framework */,
+				96942526195725BA00C64044 /* libMobileVLCKit.a */,
+				9633609419572235002DFE88 /* libMobileVLCKit.a */,
+				968F7C3F194C43C600FF8D2B /* MediaPlayer.framework */,
+				968F7C3D194C3FEC00FF8D2B /* librtmp.a */,
+				968928CA18F49F050072B65E /* CoreData.framework */,
+				9672958C18DF74D400A8269F /* Foundation.framework */,
+				9672958E18DF74D400A8269F /* CoreGraphics.framework */,
+				9672959018DF74D400A8269F /* UIKit.framework */,
+				967295AB18DF74D500A8269F /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9672959218DF74D400A8269F /* Twiig */ = {
+			isa = PBXGroup;
+			children = (
+				968A4888194AF32D00887FA0 /* DB */,
+				968A4887194AF2FE00887FA0 /* ViewController */,
+				96E790E518DFBE9D0046A99A /* AppDelegate */,
+				96E790E418DFB8A70046A99A /* View */,
+				968B1BD91948291D008A6A8D /* ZXYTwiigAnime.h */,
+				968B1BDA1948291D008A6A8D /* ZXYTwiigAnime.m */,
+				967295A418DF74D400A8269F /* Images.xcassets */,
+				9672959318DF74D400A8269F /* Supporting Files */,
+				968A2F6D195D4D3200A1A88C /* File.mm */,
+				968A2F6E195D4D3200A1A88C /* File.h */,
+			);
+			path = Twiig;
+			sourceTree = "<group>";
+		};
+		9672959318DF74D400A8269F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9672959418DF74D400A8269F /* Twiig-Info.plist */,
+				9672959518DF74D400A8269F /* InfoPlist.strings */,
+				9672959818DF74D400A8269F /* main.m */,
+				9672959A18DF74D400A8269F /* Twiig-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		967295B118DF74D500A8269F /* TwiigTests */ = {
+			isa = PBXGroup;
+			children = (
+				967295B718DF74D500A8269F /* TwiigTests.m */,
+				967295B218DF74D500A8269F /* Supporting Files */,
+			);
+			path = TwiigTests;
+			sourceTree = "<group>";
+		};
+		967295B218DF74D500A8269F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				967295B318DF74D500A8269F /* TwiigTests-Info.plist */,
+				967295B418DF74D500A8269F /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		968A2F79195D5D0A00A1A88C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				968A2F7D195D5D0B00A1A88C /* SimplePlayback.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		968A4887194AF2FE00887FA0 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				967295A118DF74D400A8269F /* ZXYTwiigLogin.h */,
+				967295A218DF74D400A8269F /* ZXYTwiigLogin.m */,
+				96EC162918E63E38009A7A45 /* ZXYTwiigMain.h */,
+				96EC162A18E63E38009A7A45 /* ZXYTwiigMain.m */,
+				96B12C1818E79D5000E481AD /* ZXYTwiigAnimeGenre.h */,
+				96B12C1918E79D5000E481AD /* ZXYTwiigAnimeGenre.m */,
+				96D7250D18ECE08B006FB7C2 /* ZXYTwiigSearch.h */,
+				96D7250E18ECE08B006FB7C2 /* ZXYTwiigSearch.m */,
+				96D7250718ECD96E006FB7C2 /* ZXYTwiigAnimeResult.h */,
+				96D7250818ECD96E006FB7C2 /* ZXYTwiigAnimeResult.m */,
+				963D034418EE3A4D002669B0 /* ZXYTwiigAnimeDetails.h */,
+				963D034518EE3A4D002669B0 /* ZXYTwiigAnimeDetails.m */,
+				963D034718EE4F52002669B0 /* ZXYTwiigAnimesActions.h */,
+				963D034818EE4F52002669B0 /* ZXYTwiigAnimesActions.m */,
+				968D9DFE19008CB50006F2F6 /* ZXYTwiigVideo.h */,
+				968D9DFF19008CB50006F2F6 /* ZXYTwiigVideo.m */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		968A4888194AF32D00887FA0 /* DB */ = {
+			isa = PBXGroup;
+			children = (
+				968928CC18F4A17C0072B65E /* TwiigBDD.xcdatamodeld */,
+				9686ACB718EF966300D7F162 /* ZXYTwiigDBTest.h */,
+				9686ACB818EF966300D7F162 /* ZXYTwiigDBTest.m */,
+			);
+			name = DB;
+			sourceTree = "<group>";
+		};
+		96E790E418DFB8A70046A99A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9672959E18DF74D400A8269F /* Main.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		96E790E518DFBE9D0046A99A /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				9672959C18DF74D400A8269F /* ZXYTwiigAppDelegate.m */,
+				9672959B18DF74D400A8269F /* ZXYTwiigAppDelegate.h */,
+			);
+			name = AppDelegate;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9672958818DF74D400A8269F /* Twiig */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 967295BB18DF74D500A8269F /* Build configuration list for PBXNativeTarget "Twiig" */;
+			buildPhases = (
+				9672958718DF74D400A8269F /* Resources */,
+				9672958518DF74D400A8269F /* Sources */,
+				9672958618DF74D400A8269F /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Twiig;
+			productName = Twiig;
+			productReference = 9672958918DF74D400A8269F /* Twiig.app */;
+			productType = "com.apple.product-type.application";
+		};
+		967295A918DF74D500A8269F /* TwiigTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 967295BE18DF74D500A8269F /* Build configuration list for PBXNativeTarget "TwiigTests" */;
+			buildPhases = (
+				967295A618DF74D500A8269F /* Sources */,
+				967295A718DF74D500A8269F /* Frameworks */,
+				967295A818DF74D500A8269F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				967295B018DF74D500A8269F /* PBXTargetDependency */,
+			);
+			name = TwiigTests;
+			productName = TwiigTests;
+			productReference = 967295AA18DF74D500A8269F /* TwiigTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9672958118DF74D400A8269F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = ZXYTwiig;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = Segard;
+				TargetAttributes = {
+					967295A918DF74D500A8269F = {
+						TestTargetID = 9672958818DF74D400A8269F;
+					};
+				};
+			};
+			buildConfigurationList = 9672958418DF74D400A8269F /* Build configuration list for PBXProject "Twiig" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9672958018DF74D400A8269F;
+			productRefGroup = 9672958A18DF74D400A8269F /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 968A2F79195D5D0A00A1A88C /* Products */;
+					ProjectRef = 968A2F78195D5D0A00A1A88C /* SimplePlayback.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				9672958818DF74D400A8269F /* Twiig */,
+				967295A918DF74D500A8269F /* TwiigTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		968A2F7D195D5D0B00A1A88C /* SimplePlayback.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = SimplePlayback.app;
+			remoteRef = 968A2F7C195D5D0B00A1A88C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9672958718DF74D400A8269F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				967295A518DF74D400A8269F /* Images.xcassets in Resources */,
+				9672959718DF74D400A8269F /* InfoPlist.strings in Resources */,
+				967295A018DF74D400A8269F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		967295A818DF74D500A8269F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				967295B618DF74D500A8269F /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9672958518DF74D400A8269F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				963D034618EE3A4D002669B0 /* ZXYTwiigAnimeDetails.m in Sources */,
+				963D034918EE4F52002669B0 /* ZXYTwiigAnimesActions.m in Sources */,
+				9686ACB918EF966300D7F162 /* ZXYTwiigDBTest.m in Sources */,
+				96EC162B18E63E38009A7A45 /* ZXYTwiigMain.m in Sources */,
+				968D9E0019008CB50006F2F6 /* ZXYTwiigVideo.m in Sources */,
+				96D7250F18ECE08B006FB7C2 /* ZXYTwiigSearch.m in Sources */,
+				9672959918DF74D400A8269F /* main.m in Sources */,
+				96B12C1A18E79D5000E481AD /* ZXYTwiigAnimeGenre.m in Sources */,
+				96D7250918ECD96E006FB7C2 /* ZXYTwiigAnimeResult.m in Sources */,
+				967295A318DF74D400A8269F /* ZXYTwiigLogin.m in Sources */,
+				968928CE18F4A17C0072B65E /* TwiigBDD.xcdatamodeld in Sources */,
+				968B1BDB1948291D008A6A8D /* ZXYTwiigAnime.m in Sources */,
+				9672959D18DF74D400A8269F /* ZXYTwiigAppDelegate.m in Sources */,
+				968A2F6F195D4D3200A1A88C /* File.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		967295A618DF74D500A8269F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				967295B818DF74D500A8269F /* TwiigTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		967295B018DF74D500A8269F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9672958818DF74D400A8269F /* Twiig */;
+			targetProxy = 967295AF18DF74D500A8269F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9672959518DF74D400A8269F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9672959618DF74D400A8269F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		9672959E18DF74D400A8269F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9672959F18DF74D400A8269F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		967295B418DF74D500A8269F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				967295B518DF74D500A8269F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		967295B918DF74D500A8269F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		967295BA18DF74D500A8269F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		967295BC18DF74D500A8269F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_CXX_LIBRARY = "libstdc++";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Twiig/Twiig-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"/Users/Seb/Downloads/kit/VLCKit/build/Release-iphonesimulator/include",
+				);
+				INFOPLIST_FILE = "Twiig/Twiig-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/Seb/Downloads/kit/VLCKit/build,
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lMobileVLCKit",
+					"-lbz2",
+					"-lstdc++",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		967295BD18DF74D500A8269F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_CXX_LIBRARY = "libstdc++";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Twiig/Twiig-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"/Users/Seb/Downloads/kit/VLCKit/build/Release-iphonesimulator/include",
+				);
+				INFOPLIST_FILE = "Twiig/Twiig-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/Seb/Downloads/kit/VLCKit/build,
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lMobileVLCKit",
+					"-lbz2",
+					"-lstdc++",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		967295BF18DF74D500A8269F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Twiig.app/Twiig";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Twiig/Twiig-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "TwiigTests/TwiigTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		967295C018DF74D500A8269F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Twiig.app/Twiig";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Twiig/Twiig-Prefix.pch";
+				INFOPLIST_FILE = "TwiigTests/TwiigTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9672958418DF74D400A8269F /* Build configuration list for PBXProject "Twiig" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				967295B918DF74D500A8269F /* Debug */,
+				967295BA18DF74D500A8269F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		967295BB18DF74D500A8269F /* Build configuration list for PBXNativeTarget "Twiig" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				967295BC18DF74D500A8269F /* Debug */,
+				967295BD18DF74D500A8269F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		967295BE18DF74D500A8269F /* Build configuration list for PBXNativeTarget "TwiigTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				967295BF18DF74D500A8269F /* Debug */,
+				967295C018DF74D500A8269F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		968928CC18F4A17C0072B65E /* TwiigBDD.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				968928CD18F4A17C0072B65E /* TwiigBDD.xcdatamodel */,
+			);
+			currentVersion = 968928CD18F4A17C0072B65E /* TwiigBDD.xcdatamodel */;
+			path = TwiigBDD.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 9672958118DF74D400A8269F /* Project object */;
+}

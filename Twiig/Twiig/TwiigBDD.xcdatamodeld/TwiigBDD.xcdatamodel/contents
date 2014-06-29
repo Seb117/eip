@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="3401" systemVersion="13A598" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Admin_animes" syncable="YES">
+        <attribute name="directory_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="entry_date" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="hash_" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="logo_filename_250x200" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="logo_filename_250x200_hash" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="n_users_note" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nb_episodes" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="note" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="release_date" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="synopsis" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Admin_animes_genres" syncable="YES">
+        <attribute name="value" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Admin_animes_genres_associated" syncable="YES">
+        <attribute name="animeid" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="genreid" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="Admin_animes_teams" syncable="YES">
+        <attribute name="entry_date" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="logo_filename" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="logo_filename_hash" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="release_date" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="website" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Admin_animes_teams_associated" syncable="YES">
+        <attribute name="animeid" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="teamid" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="Admin_animes_teams_pictures" syncable="YES">
+        <attribute name="filename" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="size_h" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="size_w" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="teamid" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="Admin_downloading_pool" syncable="YES">
+        <attribute name="encoded" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="url" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Admin_encoded_stack" syncable="YES">
+        <attribute name="filename" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="finished" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="has480p" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="has720p" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="has1080p" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="raw_filename" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Admin_encoder_errors_history" syncable="YES">
+        <attribute name="date" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="error" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="filename" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="raw_filename" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="where" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Admin_encoding_pool" syncable="YES">
+        <attribute name="encodedid" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="filename" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Admin_fatal_errors" syncable="YES">
+        <attribute name="log" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="where_" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="why" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Admin_rights" syncable="YES">
+        <attribute name="add_anime" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="adminid" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="modify_episodes" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="modify_own" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="publish_episodes" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="publish_own" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="rm_anime" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="rm_anime_and_videos" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="rm_anime_own" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="rm_episodes" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="rm_own" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="unpublish_episodes" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="unpublish_own" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="Admin_uploading_pool" syncable="YES">
+        <attribute name="filename" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Admin_users" syncable="YES">
+        <attribute name="entry_date" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="last_connection" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="password" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Admin_validated_episodes" syncable="YES">
+        <attribute name="animeid" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="entry_data" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="filename" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="has480p" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="has720p" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="has1080p" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="numero" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="published" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="raw_filename" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="saison" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="teamid" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="Stats_by_day" syncable="YES">
+        <attribute name="date" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="help_us_clicked_count" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="inactivity_duration_average" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="open_duration_average" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="open_fullscreen_duration_average" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="open_normal_duration_average" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="Stats_connexions" syncable="YES">
+        <attribute name="date" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="value" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="Stats_menus" syncable="YES">
+        <attribute name="menuid" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="userid" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="value" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="Stats_nav" syncable="YES">
+        <attribute name="help_us_clicked_count" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="inactivity_duration_average" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="open_duration_average" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="open_fullscreen_duration_average" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="open_normal_duration_average" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="reduced_to_taskbar" optional="YES" attributeType="Integer 64" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="userid" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="Stats_servers" syncable="YES">
+        <attribute name="date" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="nb_fd_downloads" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="nb_hd_streaming" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="nb_ld_downloads" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="nb_ld_streaming" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="nb_md_downloads" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="nb_md_streaming" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="Stats_settings" syncable="YES">
+        <attribute name="download_folder" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fullscreen" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="fullscreen_bind" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="maj_auto" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="sounds" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="start_with_os" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="userid" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="vsync" optional="YES" attributeType="Boolean" syncable="YES"/>
+    </entity>
+    <entity name="Stats_user" syncable="YES">
+        <attribute name="cityname" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="countrycode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="countryname" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="osid" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="resolution_h" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="resolution_w" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="userid" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="Stats_videos" syncable="YES">
+        <attribute name="ndownloads" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="ndownloads_hd" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="ndownloads_ld" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="ndownloads_md" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="nviews" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="nviews_fd" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="nviews_ld" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="nviews_md" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="videoid" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="Twiig_episodes" syncable="YES">
+        <attribute name="animeid" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="entry_data" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="filename" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="has480p" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="has720p" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="has1080p" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="hash_" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="numero" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="raw_filename" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="saison" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="teamid" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="Twiig_members" syncable="YES">
+        <attribute name="credits" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="entry_date" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="last_connection" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="password" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Twiig_menus" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="path" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Twiig_os" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Twiig_updates" syncable="YES">
+        <attribute name="build" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="build_type" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="compulsory" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="enabled" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="entry_date" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="major" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="minor" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="patch" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="release_date" optional="YES" attributeType="Date" syncable="YES"/>
+    </entity>
+    <entity name="Twiig_updates_changelogs" syncable="YES">
+        <attribute name="description_" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="updateid" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Twiig_updates_files" syncable="YES">
+        <attribute name="filename" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="hash_" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="updateid" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Admin_animes" positionX="-20" positionY="63" width="128" height="210"/>
+        <element name="Admin_animes_genres" positionX="126" positionY="-72" width="128" height="58"/>
+        <element name="Admin_animes_genres_associated" positionX="124" positionY="-154" width="128" height="73"/>
+        <element name="Admin_animes_teams" positionX="412" positionY="9" width="128" height="133"/>
+        <element name="Admin_animes_teams_associated" positionX="126" positionY="116" width="128" height="73"/>
+        <element name="Admin_animes_teams_pictures" positionX="414" positionY="161" width="128" height="118"/>
+        <element name="Admin_downloading_pool" positionX="-20" positionY="-18" width="128" height="73"/>
+        <element name="Admin_encoded_stack" positionX="412" positionY="-144" width="128" height="133"/>
+        <element name="Admin_encoder_errors_history" positionX="124" positionY="-288" width="128" height="118"/>
+        <element name="Admin_encoding_pool" positionX="-20" positionY="-288" width="128" height="73"/>
+        <element name="Admin_fatal_errors" positionX="-18" positionY="-126" width="128" height="90"/>
+        <element name="Admin_rights" positionX="270" positionY="-288" width="128" height="240"/>
+        <element name="Admin_uploading_pool" positionX="-18" positionY="-202" width="128" height="58"/>
+        <element name="Admin_users" positionX="126" positionY="-0" width="128" height="103"/>
+        <element name="Admin_validated_episodes" positionX="268" positionY="-34" width="128" height="223"/>
+        <element name="Stats_by_day" positionX="-54" positionY="342" width="128" height="135"/>
+        <element name="Stats_connexions" positionX="-189" positionY="342" width="128" height="88"/>
+        <element name="Stats_menus" positionX="-182" positionY="450" width="128" height="90"/>
+        <element name="Stats_nav" positionX="-56" positionY="684" width="128" height="150"/>
+        <element name="Stats_servers" positionX="88" positionY="684" width="128" height="150"/>
+        <element name="Stats_settings" positionX="81" positionY="342" width="128" height="165"/>
+        <element name="Stats_user" positionX="81" positionY="525" width="128" height="150"/>
+        <element name="Stats_videos" positionX="-56" positionY="495" width="128" height="180"/>
+        <element name="Twiig_episodes" positionX="322" positionY="414" width="128" height="225"/>
+        <element name="Twiig_members" positionX="412" positionY="-288" width="128" height="133"/>
+        <element name="Twiig_menus" positionX="457" positionY="351" width="128" height="88"/>
+        <element name="Twiig_os" positionX="324" positionY="351" width="128" height="45"/>
+        <element name="Twiig_updates" positionX="459" positionY="459" width="128" height="180"/>
+        <element name="Twiig_updates_changelogs" positionX="466" positionY="657" width="128" height="90"/>
+        <element name="Twiig_updates_files" positionX="324" positionY="657" width="128" height="90"/>
+    </elements>
+</model>
